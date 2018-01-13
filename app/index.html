@@ -8,7 +8,7 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
-
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
@@ -32,8 +32,8 @@
   </div>
   </header>
   <nav class="nav-container" role="navigation">
-    <div class="wrapper">
-      <ul>
+    <div class="wrapper relative">
+      <ul class="nav-menu" id="nav-menu">
         <li>
           <a href="#" title="About">About</a>
         </li>
@@ -47,83 +47,202 @@
           <a href="#" title="Contact">Contact</a>
         </li>
       </ul>
+      <button class="mobile-menu-toggle" id="menu-toggle"><i class="fa fa-bars"></i></button>
     </div>
   </nav>
 
-  <main id="main" role="main">
-    <ul class="grid food-list">
-        <li class="unit">
-          <div class="food-list__item">
-            <div class="image">
-              <img src="images/delicious.jpg" alt="">
-            </div>
-            <div class="description">
-              <h2>Name of this</h2>
-            </div>
-            <div class="ui">
-              buttons <i class="fa fa-share" aria-hidden="true"></i>
+<main id="main" role="main">
+  <ul class="grid food-list">
+    <li class="unit">
+      <div class="food-list__item">
+        <div class="image">
+          <img src="images/delicious.jpg" alt="">
+        </div>
+        <div class="description">
+          <h2>Delicious</h2>
+          <span class="food-type">Dinner</span>
+        </div>
+        <div class="ui">
+          <button class="love-btn">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </button>
+          <button class="share-btn">
+            <i class="fa fa-share" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </li>
+    <li class="unit">
+      <div class="food-list__item">
+        <div class="image">
+          <img src="images/crack.jpg" alt="">
+        </div>
+        <div class="description">
+          <h2>Wasa</h2>
+          <span class="food-type">Breakfast</span>
+        </div>
+        <div class="ui">
+          <button class="love-btn">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </button>
+          <button class="share-btn">
+            <i class="fa fa-share" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </li>
+    <li class="unit">
+      <div class="food-list__item">
+        <div class="image">
+          <img src="images/kanelbullar.jpg" alt="">
+        </div>
+        <div class="description">
+          <h2>Kanelbullar</h2>
+          <span class="food-type">Dinner</span>
+        </div>
+        <div class="ui">
+          <button class="love-btn">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </button>
+          <button class="share-btn">
+            <i class="fa fa-share" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </li>
+    <li class="unit">
+      <div class="food-list__item">
+        <div class="image">
+          <img src="images/Krumkaker.jpg" alt="">
+        </div>
+        <div class="description">
+          <h2>Krumkaker</h2>
+          <span class="food-type">Dinner</span>
+        </div>
+        <div class="ui">
+          <button class="love-btn">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </button>
+          <button class="share-btn">
+            <i class="fa fa-share" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </li>
+    <li class="unit">
+      <div class="food-list__item">
+        <div class="image">
+          <img src="images/salmon.jpg" alt="">
+        </div>
+        <div class="description">
+          <h2>Salmon</h2>
+          <span class="food-type">Dinner</span>
+        </div>
+        <div class="ui">
+          <button class="love-btn">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </button>
+          <button class="share-btn">
+            <i class="fa fa-share" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </li>
+    <li class="unit">
+      <div class="food-list__item">
+        <div class="image">
+          <img src="images/lasagne.jpg" alt="">
+        </div>
+        <div class="description">
+          <h2>Lasagne</h2>
+          <span class="food-type">Dinner</span>
+        </div>
+        <div class="ui">
+          <button class="love-btn">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </button>
+          <button class="share-btn">
+            <i class="fa fa-share" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </li>
+    <li class="unit">
+      <div class="food-list__item">
+        <div class="image">
+          <img src="images/pexels.jpg" alt="">
+        </div>
+        <div class="description">
+          <h2>Pexles</h2>
+          <span class="food-type">Dinner</span>
+        </div>
+        <div class="ui">
+          <button class="love-btn">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </button>
+          <button class="share-btn">
+            <i class="fa fa-share" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </li>
+    <li class="unit">
+      <div class="food-list__item">
+        <div class="image">
+          <img src="images/unusual-moose-burger.jpg" alt="">
+        </div>
+        <div class="description">
+          <h2>Unusual Moose Burger</h2>
+          <span class="food-type">Dinner</span>
+        </div>
+        <div class="ui">
+          <button class="love-btn">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </button>
+          <button class="share-btn">
+            <i class="fa fa-share" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </li>
+    <li class="unit">
+        <div class="food-list__item">
+          <div class="image">
+            <img src="images/Cookbook-beef-stew.jpg" alt="">
+          </div>
+          <div class="description">
+            <h2>Delicious</h2>
+            <span class="food-type">Beef stew</span>
+          </div>
+          <div class="ui">
+            <button class="love-btn">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </button>
+            <button class="share-btn">
+              <i class="fa fa-share" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </li>
 
-            </div>
-          </div>
+  </ul>
+
+</main>
+
+
+  <footer class="footer-container blue-gradient-bg" role="contentinfo">
+    <div class="wrapper">
+      <ul class="social-links">
+        <li>
+          <a href="#" title="check our social media"><i class="fa fa-github"></i></a>
         </li>
-        <li class="unit">
-          <div class="food-list__item">
-            <div class="image">
-              <img src="images/delicious.jpg" alt="">
-            </div>
-            <div class="description">
-              <h2>Name of this</h2>
-            </div>
-            <div class="ui">
-              buttons
-            </div>
-          </div>
+        <li>
+          <a href="#" title="check our social media"><i class="fa fa-facebook"></i></a>
         </li>
-        <li class="unit">
-          <div class="food-list__item">
-            <div class="image">
-              <img src="images/delicious.jpg" alt="">
-            </div>
-            <div class="description">
-              <h2>Name of this</h2>
-            </div>
-            <div class="ui">
-              buttons
-            </div>
-          </div>
-        </li>
-        <li class="unit">
-          <div class="food-list__item">
-            <div class="image">
-              <img src="images/delicious.jpg" alt="">
-            </div>
-            <div class="description">
-              <h2>Name of this</h2>
-            </div>
-            <div class="ui">
-              buttons
-            </div>
-          </div>
-        </li>
-        <li class="unit">
-          <div class="food-list__item">
-            <div class="image">
-              <img src="images/delicious.jpg" alt="">
-            </div>
-            <div class="description">
-              <h2>Name of this</h2>
-            </div>
-            <div class="ui">
-              buttons
-            </div>
-          </div>
+        <li>
+          <a href="#" title="check our social media"><i class="fa fa-twitter"></i></a>
         </li>
       </ul>
-  </main>
-
-  <footer class="footer-container blue-gradient-bg">
-    <div class="wrapper">
-      footer links
     </div>
   </footer>
     
@@ -137,6 +256,9 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
+    <!-- build:js scripts/libs.js -->
+    <script src="bower_components/jQuery/dist/jquery.min.js"></script>
+    <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>

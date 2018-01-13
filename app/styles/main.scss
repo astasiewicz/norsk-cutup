@@ -1,6 +1,6 @@
 // bower:scss
 // endbower
-
+$custom-red: #cf2751;
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -27,28 +27,80 @@ body {
 
 /* nav */
 .nav-container {
-  background: #cf2751;
+  background: $custom-red;
   padding: 15px 0;
   ul {
     margin: 0;
-    text-align: right;
+    text-align: center;
     width: 100%;
+    display: none;
     li {
       list-style: none;
       display: block;
+      padding: 5px 0;
       a {
         color: #fff;
+        text-decoration: none;
+        &:hover {
+          color: #1198c6;
+        }
       }
     }
+  }
+}
+.mobile-menu-toggle {
+  position: absolute;
+  right: 20px;
+  top: -14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  .fa {
+    font-size: 26px;
+    color: #fff;
   }
 }
 
 .food-list {
   margin: 0;
   padding: 0;
-
+  // food-list__item
   &__item {
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    h2 {
+      color: #d2345c;
+      margin: 0;
+      font-family: 'Lobster', cursive;
+    }
+    // name and food type
+    .description {
+      padding: 15px;
+      position: relative;
+    }
+    .food-type {
+      position: absolute;
+      top: 17px;
+      right: 15px;
+      color: #999;
+    }
+    // UI - buttons
+    .ui {
+      padding: 15px;
+    }
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      padding: 1px;
+    }
+    .love-btn {
+      color: #e2e2e2;
+      &:hover { color: $custom-red; }
+    }
+    .share-btn {
+      float: right;
+    }
   }
 
   li {
@@ -56,25 +108,44 @@ body {
   }
   .image {
     overflow: hidden;
-    max-height: 290px;
+    max-height: 235px;
     img {
       will-change: transform;
       transition: transform 400ms linear;
       max-width: 100%;
       &:hover {
-        transform: scale(1.06);
+        transform: scale(1.08);
       }
     }
   }
 }
 
 .footer-container {
-  border-top: solid 4px #cf2751;
+  border-top: solid 4px $custom-red;
+
+  .social-links {
+    padding: 20px;
+    margin: 0 auto;
+    li {
+      list-style: none;
+      display: inline; 
+      margin: 0 12px;
+    }
+    a {
+      color: #fff;
+      &:hover {
+        color: $custom-red;
+      }
+    }
+  }
 }
 
 .wrapper {
   margin: 0 auto;
   padding: 0 20px;
+}
+.relative {
+  position: relative;
 }
 /* Simple grid Flex based */
 .grid, .wrapper {
@@ -105,10 +176,17 @@ body {
   }
   .nav-container {
     ul {
+      text-align: right;
+      display: block !important;
       li { 
+        margin-left: 20px;
+        margin-right: 5px;
         display: inline;
       }
     }
+  }
+  .mobile-menu-toggle {
+    display: none;
   }
 }
 @media screen and (min-width: 1440px) {
