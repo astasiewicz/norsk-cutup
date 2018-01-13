@@ -1,20 +1,23 @@
 // bower:scss
 // endbower
+
+/* Vars */
 $custom-red: #cf2751;
+
+/* Base */
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
 }
-
 body {
   background: #fafafa;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
 }
 
-/* header */
+/* Header */
 .header-container {
   h1 {
     margin: 0;
@@ -25,7 +28,7 @@ body {
   }
 }
 
-/* nav */
+/* Navigation */
 .nav-container {
   background: $custom-red;
   padding: 15px 0;
@@ -48,6 +51,7 @@ body {
     }
   }
 }
+// Mobile button
 .mobile-menu-toggle {
   position: absolute;
   right: 20px;
@@ -61,6 +65,10 @@ body {
   }
 }
 
+/* Main */
+.main-container {
+  padding: 30px 0;
+}
 .food-list {
   margin: 0;
   padding: 0;
@@ -120,6 +128,7 @@ body {
   }
 }
 
+/* Footer */
 .footer-container {
   border-top: solid 4px $custom-red;
 
@@ -140,6 +149,7 @@ body {
   }
 }
 
+/* Helpers */
 .wrapper {
   margin: 0 auto;
   padding: 0 20px;
@@ -147,6 +157,7 @@ body {
 .relative {
   position: relative;
 }
+
 /* Simple grid Flex based */
 .grid, .wrapper {
   display: flex;
@@ -165,6 +176,8 @@ body {
   box-sizing: border-box;
 }
 
+
+/* Media Queries */
 @media screen and (min-width: 480px) {
   .grid .unit {
     max-width: 50%;
@@ -194,8 +207,6 @@ body {
     max-width: 1440px;
   }
 }
-
-
 
 /* Gradients */
 
